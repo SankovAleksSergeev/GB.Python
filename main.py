@@ -153,3 +153,77 @@
 # k = int(input ("d"))
 # spisok= spisok[len(spisok)-k:len(spisok):] + spisok[0:len(spisok)-k:]  
 # print(spisok)
+
+# ------------------------------------------------------------------------------------
+
+# def sum_numbers(n):
+#     summa = 0 
+#     for i in range(1,n+1):
+#         summa+=i
+#     return summa 
+# a =sum_numbers(5)
+# print(a)
+
+# def sum_numbers(n, y= "Hello"):
+#     print(y)
+#     summa = 0 
+#     for i in range(1,n+1):
+#         summa+=i
+#     return summa 
+# a =sum_numbers(5, "Print")
+# print(a)
+
+
+# def sum_str (*args):
+#     # res = ""
+#     res = 0
+#     res_1 =0
+#     for i in args:
+#         res +=i 
+#     return res
+
+# # print(sum_str("q","w","r"))
+# # print(sum_str("q","w","r", "r","t"))
+# print(sum_str(1,8,3))
+
+# import modul1
+# print(modul1.max1 (4,8))
+
+# from modul1 import max1
+# print(max1(10,5))
+
+# from modul1 import *  #  импортируем все модули 
+# print(max1(8,4))
+
+# import modul1 as m1  # меняем название модуля для удобства 
+# print(m1.max1(10,5))
+
+
+# -------------------------------
+# m = int (input("dd"))
+# def fib(n):
+#     if n in [1,2]:
+#         return 1
+#     return fib (n-1)+fib(n-2)
+# list1 = []
+# for i in range(1,m):
+#     list1.append(fib(i))
+# print(list1)
+
+# ---------------------------------------------------
+
+def quick_sort (array):
+    if len(array)<=1:
+        return array
+    else:
+        perem = array[0]
+    list_1 = [i for i in array[1:] if i<= perem]
+    list_2 = [i for i in array{1:} if i > perem]
+    return quick_sort[list_1] + [perem] + quick_sort[list_2]
+
+x = input("Введите количество переменных")
+for i in x:
+    list=[]
+    list.append = input()
+
+print(quick_sort(list))
